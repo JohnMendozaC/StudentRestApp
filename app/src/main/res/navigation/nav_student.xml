@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_student"
+    app:startDestination="@id/studentListFragment">
+
+
+    <fragment
+        android:id="@+id/studentListFragment"
+        android:name="com.lupesoft.studentrestapp.fragments.StudentListFragment"
+        android:label="StudentListFragment" >
+        <action
+            android:id="@+id/action_studentListFragment_to_studentDetailsFragment"
+            app:destination="@id/studentDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentDetailsFragment"
+        android:name="com.lupesoft.studentrestapp.fragments.StudentDetailsFragment"
+        android:label="StudentDetailsFragment" />
+</navigation>
